@@ -1,0 +1,35 @@
+{   
+    "experiment": "default",
+    "name": "test",
+    "path_to_data": "example_data/EEG_train.npy",
+    "run": 1,
+    "device": "cpu",
+
+    "model": "ALRNN",
+    "observation_model": "Identity",
+    "latent_dim": 133,
+    "pwl_units": 50,
+    "optional_model_args": [],
+
+    "lat_model_regularization": 0.1,
+    "obs_model_regularization": 0.0,
+
+    "optimizer": "RADAM",
+    "gradient_clipping_norm": 0.0,
+    "start_lr": 1e-3,
+    "end_lr": 1e-5, 
+    "batch_size": 16,
+    "sequence_length": 100,
+    "teacher_forcing_interval": 10,
+
+    "epochs": 2000,
+    "batches_per_epoch": 50,
+    "scalar_saving_interval": 25,
+    "image_saving_interval": 5000,
+    "gaussian_noise_level": 0.0,  
+
+    "D_stsp_bins": 30,
+    "D_stsp_scaling": 1.0,
+    "PSE_smoothing": 20.0,
+    "PE_n": 20
+}
