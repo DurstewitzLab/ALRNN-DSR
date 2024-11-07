@@ -69,7 +69,7 @@ Data for the algorithm is expected to be a single trajectory in form of a $T \ti
 The ALRNN is trained by backpropagation through time using sparse teacher forcing. The forcing interval is controlled by `teacher_forcing_interval`, which specifies the intervals at which the latent state is forced according to the observations in order to prevent exploding/vanishing gradients.
 
 # 2. Python Implementation
-A basic implementation of the model and training routine is also available in python (see[ALRNN_python](alrnn_python/) folder). 
+A basic implementation of the model and training routine is also available in python (see [ALRNN_python](alrnn_python/) folder). 
 
 ## Model and Training routine
 The model including its training algorithm is implemented in the &rarr; [`ALRNN_Tutorial`](alrnn_python/AL-RNN_tutorial.ipynb) notebook. The AL-RNN using Identity mapping to generate observations is defined within the model class `AL_RNN`. The latent dimension $M$ and number of PWL units $P$ need to be specified. Training is performed through the `training_sh` routine using backpropagation through time with a sparse teacher forcing protocol, forcing the latent states based on the observations in order to prevent exploding/vanishing gradients.
