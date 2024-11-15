@@ -78,7 +78,7 @@ The model including its training algorithm is implemented in the &rarr; [`ALRNN_
 Data for the algorithm is expected to be a single trajectory in form of a $T \times N$ matrix (file format: `.npy`), where $T$ is the total number of time steps and $N$ is the data dimensionality. To generate a dataset for training, the `TimeSeriesDataset` class in the &rarr; [`dataset`](alrnn_python/dataset.py) file can be used.
 
 ## Example Models and Evaluation
-Trained example models are provided in [ALRNN_models](alrnn_python/models/). They can be evaluated using a simple evaluation provided in the &rarr; [`ALRNN_Tutorial`](alrnn_python/AL-RNN_tutorial.ipynb) notebook. The linear subregion analysis functions are provided in the &rarr; [`linear_region_functions`](alrnn_python/linear_region_functions.py) file.
+Trained example models are provided in [ALRNN_models](alrnn_python/models/). They can be evaluated using a simple evaluation provided in the &rarr; [`ALRNN_Tutorial`](alrnn_python/AL-RNN_tutorial.ipynb) notebook. The linear subregion analysis functions are provided in the &rarr; [`linear_region_functions`](alrnn_python/linear_region_functions.py) file. To calculate the dynamical system reconstruction quality, the state space dinstance $D_{stsp}$ and Hellinger dinstance $D_H$ can be calculated to evalute the geometrical and temoral agreement. These functions are provided in &rarr; [`performance measures`](alrnn_python/metrics.py).
 
 
 # Acknowledgements
