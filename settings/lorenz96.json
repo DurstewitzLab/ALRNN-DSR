@@ -29,7 +29,7 @@
     "gaussian_noise_level": 0.05,  
 
     "D_stsp_bins": 30,
-    "D_stsp_scaling": 0.3,
+    "D_stsp_scaling": 1.0,
     "PSE_smoothing": 20.0,
     "PE_n": 20
 }
