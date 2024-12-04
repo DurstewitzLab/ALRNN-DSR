@@ -10,7 +10,7 @@ using ..ObservationModels
 
 Pushes entries of `A + diag(W)` to stay below 1, avoiding divergent dynamics.
 """
-function AR_convergence_loss(m::AbstractALRNN, λ::Float32, p::Real = 2, ϵ::Float32 = 0.5f-1)
+function AR_convergence_loss(m::AbstractALRNN, λ::Float32, p::Real = 2, ϵ::Float32 = 9.5f-1)
     @assert ϵ > 0.0f0
     loss = norm(relu.((m.A .+ diag(m.W)) .- (1 - ϵ)), p)
     return λ * loss
