@@ -14,7 +14,7 @@
     "lat_model_regularization": 0.0,
     "obs_model_regularization": 0.0,
 
-    "optimizer": "RADAM",
+    "optimizer": "RAdam",
     "gradient_clipping_norm": 0.0,
     "start_lr": 5e-3,
     "end_lr": 1e-5, 
