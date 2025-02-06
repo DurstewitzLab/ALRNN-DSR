@@ -1,4 +1,4 @@
-# Almost-Linear RNNs Yield Highly Interpretable Symbolic Codes in DSR
+# Almost-Linear RNNs Yield Highly Interpretable Symbolic Codes in DSR [NeurIPS 2024 Poster]
 
 # Introduction
 This repository provides an implementation of the Almost-Linear RNN (AL-RNN) used for dynamical systems (DS) reconstruction and time series forecasting. 
@@ -80,6 +80,21 @@ Data for the algorithm is expected to be a single trajectory in form of a $T \ti
 ## Example Models and Evaluation
 Trained example models are provided in [ALRNN_models](alrnn_python/models/). They can be evaluated using a simple evaluation provided in the &rarr; [`ALRNN_Tutorial`](alrnn_python/AL-RNN_tutorial.ipynb) notebook. The linear subregion analysis functions are provided in the &rarr; [`linear_region_functions`](alrnn_python/linear_region_functions.py) file. To calculate the dynamical system reconstruction quality, the state space distance $D_{stsp}$ and Hellinger dinstance $D_H$ can be calculated to evalute the geometrical and temoral agreement. These functions are provided in &rarr; [`performance measures`](alrnn_python/metrics.py).
 
+# Citation
+If you find the repository and/or paper helpful for your own research, please cite [our work](https://papers.nips.cc/paper_files/paper/2024/hash/40cf27290cc2bd98a428b567ba25075c-Abstract-Conference.html).
+```
+@inproceedings{NEURIPS2024_40cf2729,
+ author = {Brenner, Manuel and Hemmer, Christoph J\"{u}rgen and Monfared, Zahra and Durstewitz, Daniel},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {A. Globerson and L. Mackey and D. Belgrave and A. Fan and U. Paquet and J. Tomczak and C. Zhang},
+ pages = {36829--36868},
+ publisher = {Curran Associates, Inc.},
+ title = {Almost-Linear RNNs Yield Highly Interpretable Symbolic Codes in Dynamical Systems Reconstruction},
+ url = {https://proceedings.neurips.cc/paper_files/paper/2024/file/40cf27290cc2bd98a428b567ba25075c-Paper-Conference.pdf},
+ volume = {37},
+ year = {2024}
+}
+```
 
 # Acknowledgements
 This work was funded by the Federal Ministry of Science, Education, and Culture (MWK) of the state of Baden-Württemberg within the AI Health Innovation Cluster Initiative, by the German Research Foundation (DFG) within Germany’s Excellence Strategy EXC 2181/1 – 390900948 (STRUCTURES), and through DFG individual grant Du 354/15-1 to DD. ZM was funded by the Federal Ministry of Education and Research (BMBF) through project OIDLITDSM, 01IS24061.
