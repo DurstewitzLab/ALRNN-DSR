@@ -69,7 +69,7 @@ Data for the algorithm is expected to be a single trajectory in form of a $T \ti
 The ALRNN is trained by backpropagation through time using sparse teacher forcing. The forcing interval is controlled by `teacher_forcing_interval`, which specifies the intervals at which the latent state is forced according to the observations in order to prevent exploding/vanishing gradients.
 
 # 2. Python Implementation
-A basic implementation of the model and training routine is also available in python (see [ALRNN_python](alrnn_python/) folder). 
+A basic implementation of the model and training routine is also available in Python (see [ALRNN_python](alrnn_python/) folder). 
 
 ## Model and Training routine
 The model including its training algorithm is implemented in the &rarr; [`ALRNN_Tutorial`](alrnn_python/AL-RNN_tutorial.ipynb) notebook. The AL-RNN using Identity mapping to generate observations is defined within the model class `AL_RNN`. The latent dimension $M$ and number of PWL units $P$ need to be specified. Training is performed through the `training_sh` routine using backpropagation through time with a sparse teacher forcing protocol, forcing the latent states based on the observations in order to prevent exploding/vanishing gradients.
@@ -83,7 +83,7 @@ Trained example models are provided in [ALRNN_models](alrnn_python/models/). The
 # Citation
 If you find the repository and/or paper helpful for your own research, please cite [our work](https://papers.nips.cc/paper_files/paper/2024/hash/40cf27290cc2bd98a428b567ba25075c-Abstract-Conference.html).
 ```
-@inproceedings{NEURIPS2024_40cf2729,
+@inproceedings{brenner_almost_2024,
  author = {Brenner, Manuel and Hemmer, Christoph J\"{u}rgen and Monfared, Zahra and Durstewitz, Daniel},
  booktitle = {Advances in Neural Information Processing Systems},
  editor = {A. Globerson and L. Mackey and D. Belgrave and A. Fan and U. Paquet and J. Tomczak and C. Zhang},
