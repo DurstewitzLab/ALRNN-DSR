@@ -68,6 +68,10 @@ Data for the algorithm is expected to be a single trajectory in form of a $T \ti
 ### Training method
 The ALRNN is trained by backpropagation through time using sparse teacher forcing. The forcing interval is controlled by `teacher_forcing_interval`, which specifies the intervals at which the latent state is forced according to the observations in order to prevent exploding/vanishing gradients.
 
+### Versions
+- >Julia 1.10.1
+- >Flux 0.14.16
+
 # 2. Python Implementation
 A basic implementation of the model and training routine is also available in Python (see [ALRNN_python](alrnn_python/) folder). 
 
